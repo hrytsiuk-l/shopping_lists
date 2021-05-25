@@ -1,0 +1,20 @@
+<p>
+  <b>Uid:</b>
+  <%= @item.uid %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @item.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @item.price %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Item', [item.list, item],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+</p>
